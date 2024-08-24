@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <p>
-     Welcome to my site :)
-    </p>
-    <p>
-      <button type="button">Click Here!</button>
-    </p>
+    <div>
+      <h1>
+        Welcome to my site :)
+      </h1>
+      <img id="coolSunflower" src="./cool_sunflower.jpg" alt="coolSunflower" />
+    </div>
+    <button type="button" onclick="showImage()" id="btn">Click Here!</button>
+    <script>
+      function showImage() {
+	document.getElementById('coolSunflower')
+          .style.display = "block";
+        document.getElementById('btn')
+          .style.display = "none";
+      }
+    </script>
   </body>
 </html>
