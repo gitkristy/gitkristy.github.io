@@ -3,28 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display Example</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-      #coolSunflower {
-        display: none;
-      }
-    </style>
+   
   </head>
   <body>
-    <div>
-      <h1>
-        Welcome to my site :)
-      </h1>
-      <img id="coolSunflower" src="./cool_sunflower.jpg" alt="coolSunflower" />
-    </div>
-    <button type="button" onclick="showImage()" id="btn">Click Here!</button>
+    <h1>Welcome to my site!</h1>
+    <button type="button" onclick="showImage()" id="btn">Click Me :)</button>
+    <img id="coolSunflower" src="./cool_sunflower.jpg" alt="Cool Sunflower" />
     <script>
       function showImage() {
-	document.getElementById('coolSunflower')
-          .style.display = "block";
-        document.getElementById('btn')
-          .style.display = "none";
+        document.getElementById('coolSunflower').style.display = "block";
+        document.getElementById('btn').style.display = "none";
       }
     </script>
   </body>
